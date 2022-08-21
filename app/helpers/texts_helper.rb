@@ -5,6 +5,7 @@ module TextsHelper
     if text_name.empty?
       base_name
     else
+      text_name = text_name.titleize
       text_name + " :"
     end
   end
