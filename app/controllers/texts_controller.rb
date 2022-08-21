@@ -12,11 +12,17 @@ class TextsController < ApplicationController
   end
 
   def create 
-    @text = Text.create(params[:session])
+    @text = Text.new(text_params)
     if @text.save 
       redirect_to root_path 
     else
       render 'new'
     end
   end
+  private 
+
+    def text_params
+      params.require(:text).permit(:name, :text)
+
+end
 end

@@ -1,4 +1,5 @@
-<%= form_with(model: @text, local: true) do |f| %>
+<%= link_to "HOME", root_path, class: "homeButton" %>
+<%= form_with(model: @text, local: true, class: "formContainer") do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %>
   <%= f.label :text %>
