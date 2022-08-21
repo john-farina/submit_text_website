@@ -1,2 +1,9 @@
 <%= link_to image_tag("home.png", class: "homeIcon"), root_path, class: "iconContainer" %>
-<%= @text.text %>
+
+<h1 class="pageName">Created by:   <%= auto_page_name(@text.name.to_s) %></h1>
+
+<h4 class="pageDate"> <%= "Posted " + distance_of_time_in_words(@text.created_at, Time.now) + " ago" %></h4>
+
+<div class="pageTextContainer">
+<p class="pageText"><%= @text.text %></p>
+</div>

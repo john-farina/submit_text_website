@@ -20,6 +20,7 @@ body {
   align-items: center;
   font-family: 'Montserrat', sans-serif;
   color: white;
+  width: 100%;
 
 }
 
@@ -182,4 +183,28 @@ a{
 }
 a:hover {
   color: var(--black);
+}
+
+/* SEPERATE PAGES STYLE */
+
+.pageName {
+  margin-bottom: 0px;
+
+}
+.pageDate{
+  margin-top: 0;
+
+}
+.pageTextContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--gray);
+  color: var(--blue);
+  width: 80%;
+  padding: 10px;
+  text-align: center;
+}
+.pageText {
+
 }
