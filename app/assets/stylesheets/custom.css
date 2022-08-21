@@ -1,15 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
 
+:root {
+  --black: rgb(17, 17, 17);
+  --darkgray: rgb(42, 42, 42);
+  --gray: rgb(49, 49, 49);;
+  --white: rgb(241, 242, 227);
+  --blue: rgb(101, 201, 238);
+  --darkblue: rgb(66, 129, 152);
+  --transparentblue: rgba(101, 201, 238, 0.535);
+}
+
 body {
   position: relative;
-  background-color: rgb(17, 17, 17);
+ margin: 0;
+  background-color: var(--black);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: 'Montserrat', sans-serif;
   color: white;
-  margin-top: 60px;
+
+}
+
+.latestBanner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--transparentblue);
+  color: var(--white);
+  width: 100%;
+  height: 30px;
 }
 
 .iconContainer {
@@ -19,7 +40,7 @@ body {
   right: 0;
   margin-right: 20px;
   margin-top: 20px;
-  background-color: rgba(101, 201, 238, 0.535);
+  background-color: var(--transparentblue);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -65,8 +86,8 @@ a:hover {
 
 input {
   font-size: 20px;
-  background-color: rgb(49, 49, 49);
-  color:  rgb(241, 242, 227);
+  background-color: var(--gray);
+    color:  var(--white);
 }
 
 .container {
@@ -79,7 +100,7 @@ input {
 }
 
 .textContainer {
-  background-color: rgb(42, 42, 42);
+  background-color: var(--darkgray);
   display: flex;
   flex-direction: column;
   width: 330px;
@@ -101,7 +122,7 @@ input {
 }
 .textName {
   text-align: left;
-  color: rgb(101, 201, 238);
+  color: var(--blue);
   font-size: 15px;
 }
 .timeBox {
@@ -111,7 +132,7 @@ input {
   justify-content: center;
   text-align: center;
 
-  color: rgb(66, 129, 152);
+  color: var(--darkblue);
   font-size: 10px;
 
   width: 300px;
@@ -122,11 +143,11 @@ input {
 .chatBox {
   text-align: center;
   position: relative;
-  color: rgb(241, 242, 227);
+  color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(49, 49, 49);
+  background-color: var(--gray);
   height: 60px;
   padding: 10px;
   overflow-y: scroll;
@@ -140,6 +161,7 @@ input {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  margin-top: 50px;
 }
 
 .homeButton {

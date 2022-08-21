@@ -1,7 +1,9 @@
 
 <%= link_to image_tag("paper.png", class: "paperIcon"), new_path, class: "iconContainer" %>
 
-
+<div class="latestBanner">
+<%= "Latest post was posted " + distance_of_time_in_words(@text.last.created_at, Time.now) + " ago" %>
+</div>
 
 
 <div class="container">
@@ -18,9 +20,6 @@
         </div>
 
         <div class="timeBox">
-          <h4 class="timeText">
-            <%= t.created_at.strftime("%m/%d/%Y") %>
-          </h4>
           <h4 class="timeText">
             <%= "Posted " + distance_of_time_in_words(t.created_at, Time.now) + " ago" %>
           </h4>
