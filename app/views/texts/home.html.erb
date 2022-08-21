@@ -9,20 +9,21 @@
   <% @text.each do |t| %>
 
 <div class="textContainer">
+
       <div class="infoBox">
           <h2 class="textName">
             <%= auto_name(t.name.to_s) %>
           </h2>
+          <div class="timeBox">
+        <%= t.created_at.strftime("%m/%d/%Y") %>
+        <%= t.created_at.strftime("%I:%M %p") %>
+        </div>
       </div>
-      
+
       <div class="chatBox">
         <h2 class="textMessage">
         <%= t.text.to_s %>
         </h2>
-        <div class="timeBox">
-        <%= t.created_at.strftime("%m/%d/%Y") %>
-        <%= t.created_at.strftime("%I:%M %p") %>
-        </div>
       </div>
 </div>
 
