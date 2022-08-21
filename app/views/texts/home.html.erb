@@ -4,19 +4,19 @@
 </h1>
 </div>
 
-<ul class="textList">
 
+<div class="textContainer">
   <% @text.each do |t| %>
-    <li>
+
       <div class="chatBox">
       <h2 class="textName">
         <%= t.name %> :
         </h2>
         <h2 class="textMessage">
-        <%= t.text %>
+        <%= t.text.to_s %>
         </h2>
+ 
       </div>
-    </li>
-  <% end %>
 
-</ul>
+  <% end %>
+</div>

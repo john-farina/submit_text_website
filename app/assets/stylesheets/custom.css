@@ -7,6 +7,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: 'Montserrat', sans-serif;
+  color: white;
 }
 
 /* .headerButton {
@@ -24,9 +25,6 @@ body {
   background-color: rgb(9, 92, 9);
 } */
 
-ul {
-  list-style: none;
-}
 
 a {
   font-size: 1.6rem;
@@ -43,6 +41,15 @@ a:hover {
 
 input {
   font-size: 20px;
+  background-color: rgb(49, 49, 49);
+  color:  rgb(241, 242, 227);
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-top: 20px;
 }
 
 .textList {
@@ -52,6 +59,7 @@ input {
 }
 
 .chatBox {
+  text-align: center;
   position: relative;
   color: rgb(241, 242, 227);
   display: flex;
@@ -61,6 +69,7 @@ input {
   height: 60px;
   width: 220px;
   padding: 10px;
+  overflow-y: scroll;
 }
 
 .textName {
