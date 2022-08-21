@@ -29,7 +29,9 @@
 
       <div class="chatBox">
         <h2 class="textMessage">
-        <%= t.text.to_s %>
+      
+        <%= link_to t.text.to_s , ('/texts/' + t.id.to_s) %>
+        
         </h2>
       </div>
 </div>
