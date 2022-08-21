@@ -175,3 +175,11 @@ input {
 label {
   margin-bottom: -10px;
 }
+
+a{
+  text-decoration: none;
+  color: var(--white);
+}
+a:hover {
+  color: var(--black);
+}
