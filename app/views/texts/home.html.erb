@@ -11,13 +11,22 @@
 <div class="textContainer">
 
       <div class="infoBox">
+
+        <div class="nameBox">
           <h2 class="textName">
             <%= auto_name(t.name.to_s) %>
           </h2>
-          <div class="timeBox">
-        <%= t.created_at.strftime("%m/%d/%Y") %>
-        <%= t.created_at.strftime("%I:%M %p") %>
         </div>
+
+        <div class="timeBox">
+          <h4 class="timeText">
+            <%= t.created_at.strftime("%m/%d/%Y") %>
+          </h4>
+          <h4 class="timeText">
+            <%= "Posted " + distance_of_time_in_words(t.created_at, Time.now) + " ago" %>
+          </h4>
+        </div>
+        
       </div>
 
       <div class="chatBox">

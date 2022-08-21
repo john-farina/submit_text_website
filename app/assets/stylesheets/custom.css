@@ -65,16 +65,34 @@ input {
   display: flex;
   align-items: center;
   height: 40px;
+
+}
+.nameBox {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 20px;
 }
 .textName {
   color: rgb(101, 201, 238);
   font-size: 15px;
-  margin-left: 10px;
 }
 .timeBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   margin-left: 190px;
   color: rgb(66, 129, 152);
   font-size: 10px;
+
+  width: 300px;
+}
+.timeText {
+  margin: 0;
 }
 .chatBox {
   text-align: center;
