@@ -12,7 +12,7 @@ class TextsController < ApplicationController
   end
 
   def create 
-    @text = Text.new(text: params[:text])
+    @text = Text.create(text: params[:text])
     if @text.save 
       redirect_to root_path 
     else

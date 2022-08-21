@@ -8,8 +8,13 @@
 
   <% @text.each do |t| %>
     <li>
-      <div>
-        <%= t.name %> - <%= t.text %>
+      <div class="chatBox">
+      <h2 class="textName">
+        <%= t.name %> :
+        </h2>
+        <h2 class="textMessage">
+        <%= t.text %>
+        </h2>
       </div>
     </li>
   <% end %>

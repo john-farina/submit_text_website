@@ -13,4 +13,5 @@ class TextTest < ActiveSupport::TestCase
     @text.text = "     "
     assert_not @text.valid?
   end
+  
 end
