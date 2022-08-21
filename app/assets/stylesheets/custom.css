@@ -33,3 +33,7 @@ a:hover {
   background-color: black;
   color: green;
 }
+
+input {
+  font-size: 20px;
+}
