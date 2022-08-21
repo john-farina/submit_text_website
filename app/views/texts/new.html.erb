@@ -1,0 +1,5 @@
+<%= form_with(model: @text, local: true) do |f| %>
+  <%= f.label :text %>
+  <%= f.text_field :text %>
+  <%= f.submit "Submit Text" %>
+<% end %>

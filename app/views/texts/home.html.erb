@@ -1,0 +1,12 @@
+<h1>Type Something In</h1>
+<ul>
+
+  <% @text.each do |t| %>
+    <li>
+      <div>
+        <%= t.name %> - <%= t.text %>
+      </div>
+    </li>
+  <% end %>
+
+</ul>
