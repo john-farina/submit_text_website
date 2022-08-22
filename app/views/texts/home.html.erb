@@ -1,7 +1,7 @@
 <%= link_to image_tag("paper.png", class: "paperIcon"), new_path, class: "iconContainer" %>
 
 <div class="latestBanner">
-<%= link_to "Latest post was posted " + distance_of_time_in_words(@text.last.created_at, Time.now) + " ago", '/texts/' + @text.last.id.to_s %>
+<%= link_to "Latest post was posted " + distance_of_time_in_words(@text.first.created_at, Time.now) + " ago", '/texts/' + @text.last.id.to_s %>
 </div>
 
 

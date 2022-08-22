@@ -8,7 +8,7 @@ class TextsController < ApplicationController
   end
 
   def home 
-    @text = Text.all
+    @text = Text.all.reverse_order
   end
 
   def create 
